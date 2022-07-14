@@ -72,7 +72,7 @@ public class Program
 
     private static void ExportToCsv(List<PageDetails> pageDetails, string searchTerm)
     {
-        using var writer = new StreamWriter($@"/Users/tshterev/OneDrive - ENDAVA/Desktop/{searchTerm}_{DateTime.Now.ToFileTime()}.csv");
+        using var writer = new StreamWriter($@"path you wish your file to be created");
         using var csv = new CsvWriter(writer, CultureInfo.InvariantCulture);
 
         csv.WriteRecords(pageDetails);
